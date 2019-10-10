@@ -1,0 +1,23 @@
+﻿@page
+@model TH2_CoreRazor_Contosa.Pages.HelloModel
+@{
+    ViewData["Title"] = "Hello";
+}
+
+    <h2>Hello </h2>
+    <h3> The time on the server is @DateTime.Now</h3>
+
+    <p>
+
+        Enter your name.
+    </p>
+
+    <form method="POST">
+        <div>Name: <input asp-for="UserName" /></div>
+        <input type="submit" />
+    </form>
+
+    <div id=" result">@this.Model.UserName</div>
+
+
+
